@@ -1,0 +1,66 @@
+<html>
+    <head>
+		<meta charset="utf-8">
+		<title>Анкета</title>
+		<link rel="stylesheet" href="/static/style.css" type="text/css"/>
+    </head>
+	<body>
+		<form action="/thanks">
+		
+			<h1 class="heading">Анкета</h1>
+			
+			<table width="30%">
+				<tr> 
+					<td class="maintextright">Имя:</td>
+					<td><input type="text" checked name="name" value=""></td>
+				</tr>
+				<tr> 
+					<td class="maintextright"">Возраст (цифрами):</td>
+					<td><input type="text" checked name="age" value=""></td>
+				</tr>
+			</table>
+			
+			<p class="maintext">Напишите синонимы к словам в виде СИНОНИМ1,СИНОНИМ2,СИНОНИМ3:</p>
+			<table width="48%">
+				<tr> 
+					<td class="maintextright">Кинуть:</td>
+					<td><input type="text" checked name="throw" value=""></td>
+				</tr>
+				<tr> 
+					<td class="maintextright">Ништяк:</td>
+					<td><input type="text" checked name="nishtak" value=""></td>
+				</tr>
+			</table>
+			
+			<p class="maintext">Какое из двух выражений Вы чаще употребляете в своей речи?</p>
+			<table>
+				<tr> 
+					<td><input type="radio" checked name="vs1" value="akademka"></td>
+					<td class="maintext">академка или</td>
+					<td><input type="radio" name="vs1" value="academic"></td>
+					<td class="maintext">академический отпуск</td>
+				</tr>
+				<tr> 
+					<td><input type="radio" checked name="vs2" value="lineyka"></td>
+					<td class="maintext">линейка или</td>
+					<td><input type="radio" name="vs2" value="linear"></td>
+					<td class="maintext">линейная алгебра</td>
+				</tr>
+				<tr> 
+					<td><input type="radio" checked name="vs3" value="automat"></td>
+					<td class="maintext">автомат или</td>
+					<td><input type="radio" name="vs3" value="automatic"></td>
+					<td class="maintext">автоматический зачёт</td>
+				</tr>
+				<tr> 
+					<td><input type="radio" checked name="vs4" value="prepod"></td>
+					<td class="maintext">препод или</td>
+					<td><input type="radio" name="vs4" value="prepodavatel" class="radio1"></td>
+					<td class="maintext">преподаватель</td>
+				</tr>
+			</table>
+	
+			<p class="center"><input type="submit" value="Отправить" class="button"></p>
+		</form>
+	</body>
+ </html>

@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Статистика</title>
+		<link rel="stylesheet" href="/static/style.css" type="text/css"/>
+	</head>
+	<body>
+		<form action="/jsn">
+			<p class="knopkacenter"><input type="submit" value="Данные" class="button"></p>
+		</form>
+		<form action="/search">
+			<p class="knopkacenter"><input type="submit" value="Поиск" class="button"></p>
+		</form>
+		<h1 class="heading">Статистика</h1>
+		<h2 class="heading2">Значения слов "кинуть" и "ништяк"</h2>
+			<p class="maintext">{{s}}</p>
+			<p class="maintext">{{n}}</p>
+		<h2 class="heading2">Полная vs стяжённая форма</h2>	
+			<table align="center">
+				<caption class="heading">Какие формы употребляют информанты в возрасте больше 66 лет</caption>
+				<tr>
+					<th class="table">Лексемы</th>
+					<th class="table">Стяженная форма</th>
+					<th class="table">Полная форма</th>
+				</tr>
+				<tr class="table"><td>академка vs академический отпуск</td><td><span class="bold">{{a}} %</span></td><td><span class="bold">{{aa}} %</span></td></tr>
+				<tr class="table"><td>линейка vs линейная алгебра</td><td><span class="bold">{{b}} %</span></td><td><span class="bold">{{bb}} %</span></td></tr>
+				<tr class="table"><td>автомат vs автоматический зачёт</td><td><span class="bold">{{c}} %</span></td><td><span class="bold">{{cc}} %</span></td></tr>
+				<tr class="table"><td>препод vs преподаватель</td><td><span class="bold">{{d}} %</span></td><td><span class="bold">{{dd}} %</span></td></tr>
+			</table>
+			
+			<table align="center">
+				<caption class="heading">Какие формы употребляют информанты в возрасте от 33 до 66 лет</caption>
+				<tr>
+					<th class="table">Лексемы</th>
+					<th class="table">Стяженная форма</th>
+					<th class="table">Полная форма</th>
+				</tr>
+				<tr class="table"><td>академка vs академический отпуск</td><td><span class="bold">{{e}} %</span></td><td><span class="bold">{{ee}} %</span></td></tr>
+				<tr class="table"><td>линейка vs линейная алгебра</td><td><span class="bold">{{f}} %</span></td><td><span class="bold">{{ff}} %</span></td></tr>
+				<tr class="table"><td>автомат vs автоматический зачёт</td><td><span class="bold">{{g}} %</span></td><td><span class="bold">{{gg}} %</span></td></tr>
+				<tr class="table"><td>препод vs преподаватель</td><td><span class="bold">{{h}} %</span></td><td><span class="bold">{{hh}} %</span></td></tr>
+			</table>
+
+			<table align="center">
+				<caption class="heading">Какие формы употребляют информанты в возрасте до 33 лет</caption>
+				<tr>
+					<th class="table">Лексемы</th>
+					<th class="table">Стяженная форма</th>
+					<th class="table">Полная форма</th>
+				</tr>
+				<tr class="table"><td>академка vs академический отпуск</td><td><span class="bold">{{y}} %</span></td><td><span class="bold">{{yy}} %</span></td></tr>
+				<tr class="table"><td>линейка vs линейная алгебра</td><td><span class="bold">{{x}} %</span></td><td><span class="bold">{{xx}} %</span></td></tr>
+				<tr class="table"><td>автомат vs автоматический зачёт</td><td><span class="bold">{{o}} %</span></td><td><span class="bold">{{oo}} %</span></td></tr>
+				<tr class="table"><td>препод vs преподаватель</td><td><span class="bold">{{m}} %</span></td><td><span class="bold">{{mm}} %</span></td></tr>
+			</table>			
+	</body>
+</html>

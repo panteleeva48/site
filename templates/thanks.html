@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Спасибо</title>
+		<link rel="stylesheet" href="/static/style.css" type="text/css"/>
+	</head>
+	<body>
+		<h1 class="heading">Спасибо за участии в анкете, {{ name }}!</h1>
+		<form action="/jsn">
+			<p class="knopkacenter"><input type="submit" value="Данные" class="button"></p>
+		</form>
+		<form action="/stats">
+			<p class="knopkacenter"><input type="submit" value="Статистика" class="button"></p>
+		</form>
+		<form action="/search">
+			<p class="knopkacenter"><input type="submit" value="Поиск" class="button"></p>
+		</form>
+		<div align="center"><img src="{{url_for('static', filename='thank.jpg')}}" /></div>
+	</body>
+</html>

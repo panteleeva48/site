@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Результаты</title>
+		<link rel="stylesheet" href="/static/style.css" type="text/css"/>
+	</head>
+	<body>
+		<form action="/jsn">
+			<p class="knopkacenter"><input type="submit" value="Данные" class="button">
+		</form>
+		<form action="/stats">
+			<p class="knopkacenter"><input type="submit" value="Статистика" class="button"></p>
+		</form>
+		<form action="/search">
+			<p class="knopkacenter"><input type="submit" value="Поиск" class="button"></p>
+		</form>
+		<form method="GET">
+			{% if choose|length == 1 %}
+			<p class="maintextcenter"><span class="bold">{{y}}</span> процентов информантов в возрасте до 33 лет употребляют слово "академка", <span class="bold">{{yy}}</span> процентов - "академический отпуск"<br>
+			<span class="bold">{{x}}</span> процентов информантов в возрасте до 33 лет употребляют слово "линейка", <span class="bold">{{xx}}</span> процентов - "линейная алгебра"<br>
+			<span class="bold">{{o}}</span> процентов информантов в возрасте до 33 лет употребляют слово "автомат", <span class="bold">{{oo}}</span> процентов - "автоматический зачёт"<br>
+			<span class="bold">{{m}}</span> процентов информантов в возрасте до 33 лет употребляют слово "препод", <span class="bold">{{mm}}</span> процентов - "преподаватель"</p>
+			{% elif choose|length == 2 %}
+			<p class="maintextcenter"><span class="bold">{{e}}</span> процентов информантов в возрасте от 33 до 66 лет употребляют слово "академка", <span class="bold">{{ee}}</span> процентов - "академический отпуск"<br>
+			<span class="bold">{{f}}</span> процентов информантов в возрасте от 33 до 66 лет употребляют слово "линейка", <span class="bold">{{ff}}</span> процентов - "линейная алгебра"<br>
+			<span class="bold">{{g}}</span> процентов информантов в возрасте от 33 до 66 лет употребляют слово "автомат", <span class="bold">{{gg}}</span> процентов - "автоматический зачёт"<br>
+			<span class="bold">{{h}}</span> процентов информантов в возрасте от 33 до 66 лет употребляют слово "препод", <span class="bold">{{hh}}</span> процентов - "преподаватель"</p>
+			{% elif choose|length == 3 %}
+			<p class="maintextcenter"><span class="bold">{{a}}</span> процентов информантов в возрасте больше 66 лет употребляют слово "академка", <span class="bold">{{aa}}</span> процентов - "академический отпуск"<br>
+			<span class="bold">{{b}}</span> процентов информантов в возрасте больше 66 лет употребляют слово "линейка", <span class="bold">{{bb}}</span> процентов - "линейная алгебра"<br>
+			<span class="bold">{{c}}</span> процентов информантов в возрасте больше 66 лет употребляют слово "автомат", <span class="bold">{{cc}}</span> процентов - "автоматический зачёт"<br>
+			<span class="bold">{{d}}</span> процентов информантов в возрасте больше 66 лет употребляют слово "препод", <span class="bold">{{dd}}</span> процентов - "преподаватель"</p>
+			{% elif choose|length == 5 %}
+			<p class="maintextcenter">{{s}}</p>
+			{% else %}
+			<p class="maintextcenter">{{n}}</p>
+			{% endif %}
+		</form>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Поиск</title>
+		<link rel="stylesheet" href="/static/style.css" type="text/css"/>
+	</head>
+	<body>
+		<form action="/jsn">
+			<p class="knopkacenter"><input type="submit" value="Данные" class="button"></p>
+		</form>
+		<form action="/stats">
+			<p class="knopkacenter"><input type="submit" value="Статистика" class="button"></p>
+		</form>
+		<form action="/results">
+			<p class="maintextcenter">Посмотреть статистику употребления кратких (стяжённых) форм среди информантов, которым:</p>
+			<p class="maintextleft"><input type="radio" checked name="choose" value="0">от 0 до 33</p>
+			<p class="maintextleft"><input type="radio" checked name="choose" value="33">от 33 до 66</p>
+			<p class="maintextleft"><input type="radio" checked name="choose" value="666">от 66</p>
+			<p class="maintextcenter">Посмотреть значения слов, указанные информантами:</p>
+			<p class="maintextleft"><input type="radio" checked name="choose" value="throw">кинуть</p>
+			<p class="maintextleft"><input type="radio" checked name="choose" value="nishtak">ништяк</p>
+		<form action="/results">
+			<p class="knopkacenter"><input type="submit" value="Посмотреть результат" class="button"></p>
+		</form>
+		</form>
+	</body>
+</html>
